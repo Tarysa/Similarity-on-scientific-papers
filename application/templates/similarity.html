@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <a href="/"><img class="back_home" src="../static/images/home3.png"> </a>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/loader.css') }}">
+    <script type="text/javascript">
+        /*alert("Je ne sais pas coder");
+
+        function showHide(){
+         alert("Je ne sais pas coder");
+          let loader = document.getElementById('test');
+          //console.log(loader);
+        // var el = document.querySelectorAll('.loader');
+         //loader.classList.add('hidden');
+         loader.removeAttribute("hidden");*/
+        //document.getElementById("submit").addEventListener("click", function() {document.getElementById("loader").hidden = false;}, false)*/
+    </script>
+{% endblock %}
+
+{% block body %}
+
+
+
+<form action = "/uploader/" method = "POST"
+         enctype = "multipart/form-data">
+         <input type = "file" name = "file" />
+        <input onclick="fun()" type="submit"></input>
+</form>
+
+<!--<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/loader.css') }}">
+</head>-->
+<script>
+
+  function fun() {
+  document.getElementById("loader").style.display = "block";
+  }
+
+</script>
+
+<div id="loader" style="display: none;">
+  <div class="body">
+    <span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </span>
+    <div class="base">
+      <span></span>
+      <div class="face"></div>
+    </div>
+  </div>
+  <div class="longfazers">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <h1>Loading</h1>
+</div>
+{{msgErreur}}
+
+{% endblock %}

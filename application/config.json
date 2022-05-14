@@ -1,0 +1,7 @@
+{
+    "grobid_server": "http://svc.vissights.net/grobid",
+    "grobid_port": "80",
+    "batch_size": 1000,
+    "sleep_time": 5,
+    "coordinates" : []
+}

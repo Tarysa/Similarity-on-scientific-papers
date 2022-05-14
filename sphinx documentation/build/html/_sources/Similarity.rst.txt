@@ -1,0 +1,5 @@
+Similarity
+==========
+
+.. automodule:: Similarity
+    :members:

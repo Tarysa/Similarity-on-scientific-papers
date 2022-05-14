@@ -1,0 +1,1507 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main" xml:id="_wXtgf8z">Geometry and kinematics of the broad emission line region in the lensed quasar Q2237+0305</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2021-08-20">August 20, 2021</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">D</forename><surname>Hutsemékers</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation">Institut d&apos;Astrophysique et de Géophysique, Université de Liège, Allée du 6 Août 19c, B5c, 4000 Liège, Belgium</note>
+								<orgName type="department">Institut d&apos;Astrophysique et de Géophysique</orgName>
+								<orgName type="institution">Université de Liège</orgName>
+								<address>
+									<addrLine>Allée du 6 Août 19c, B5c</addrLine>
+									<postCode>4000</postCode>
+									<settlement>Liège</settlement>
+									<country key="BE">Belgium</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">D</forename><surname>Sluse</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation">Institut d&apos;Astrophysique et de Géophysique, Université de Liège, Allée du 6 Août 19c, B5c, 4000 Liège, Belgium</note>
+								<orgName type="department">Institut d&apos;Astrophysique et de Géophysique</orgName>
+								<orgName type="institution">Université de Liège</orgName>
+								<address>
+									<addrLine>Allée du 6 Août 19c, B5c</addrLine>
+									<postCode>4000</postCode>
+									<settlement>Liège</settlement>
+									<country key="BE">Belgium</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main" xml:id="_ZayWVbk">Geometry and kinematics of the broad emission line region in the lensed quasar Q2237+0305</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2021-08-20">August 20, 2021</date>
+						</imprint>
+					</monogr>
+					<idno type="arXiv">arXiv:2108.08696v1[astro-ph.GA]</idno>
+					<note type="submission">Received ; accepted: ABSTRACT</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.0-SNAPSHOT" ident="GROBID" when="2021-08-20T09:37+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term xml:id="_Cmdknbs">Gravitational lensing -Quasars</term>
+					<term xml:id="_abGtypr">general -Quasars</term>
+					<term xml:id="_c6Fdm24">emission lines</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="_5bTwand"><p xml:id="_RNfghPA">Line profile distortions are commonly observed in gravitationally lensed quasar spectra. These distortions are caused by microlensing from the stars in the lensing galaxy, which produce differential magnification of spatially and kinematically separated parts of the broad line region (BLR). The quasi-simultaneous visible and near-infrared spectroscopy of the lensed quasar Q2237+0305 reveals strong microlensing-induced line deformations in the high-ionization C iv λ1549Å and the low-ionization Hα emission lines. We use this effect to constrain the BLR size, geometry, and kinematics in Q2237+0305. For this purpose, we modeled the deformation of the emission lines for three representative BLR models: a Keplerian disk, an equatorial wind, and a biconical polar wind. We considered various inclinations with respect to the line of sight. We find that the observed microlensing effect, characterized by a set of four indices, can only be reproduced by a subsample of the considered BLR models. The microlensing analysis favors a Keplerian disk model for the regions emitting the C iv and the Hα emission lines. A polar wind model remains possible for the C iv BLR, although it is less likely. The equatorial wind model is totally excluded. A preferred inclination of the BLR of 40 • is found, in agreement with expectations for a type 1 AGN and past constraints on the accretion disk inclination. The half-light radius of the BLR is r 1/2 ≃ 47±19 light-days, with no significant difference between the C iv and Hα BLRs. The size of the C iv BLR agrees with the radius-luminosity relation derived from reverberation mapping, while the size of the Balmer line BLR is one order of magnitude smaller, possibly revealing different quasar properties at high luminosities and high accretion rates.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1." xml:id="_6A6vDgx">Introduction</head><p xml:id="_kGQJJbr">The geometry and kinematics of the broad line region (BLR) in active galactic nuclei (AGNs) has been essentially investigated through reverberation mapping <ref type="bibr" target="#b7">(Blandford &amp; McKee 1982;</ref><ref type="bibr" target="#b42">Peterson 1993)</ref>, a technique that takes advantage of the variability of the ionizing continuum to measure the response time of the emission lines, which is directly related to the size of the BLR. Time lags as a function of the velocity across the Hβ emission line profile have been measured in a dozen AGNs, providing information on the geometry and kinematics of the BLR. The geometry is generally a thick disk viewed close to face-on, while various kinematical signatures were found in the different objects, mostly virialized motions, inflows, or outflows (e.g., <ref type="bibr" target="#b5">Bentz et al. 2009</ref><ref type="bibr" target="#b6">Bentz et al. , 2010</ref><ref type="bibr" target="#b12">Denney et al. 2010;</ref><ref type="bibr" target="#b41">Pancoast et al. 2014;</ref><ref type="bibr" target="#b13">Du et al. 2016a;</ref><ref type="bibr" target="#b25">Grier et al. 2017a;</ref><ref type="bibr" target="#b56">Xiao et al. 2018;</ref><ref type="bibr" target="#b57">Zhang et al. 2019)</ref>. Recently, the advent of long-baseline nearinfrared interferometry made it possible to spatially resolve the Pα and Brγ BLRs in two AGNs, revealing a thick disk dominated by Keplerian rotation <ref type="bibr">(Gravity Collaboration et al. 2018</ref>. These observations agree with the results from reverberation mapping.</p><p xml:id="_G5tGXkM">Several studies have shown that line profile distortions are commonly observed in gravitationally lensed quasar spectra <ref type="bibr" target="#b46">(Richards et al. 2004;</ref><ref type="bibr" target="#b55">Wayth et al. 2005;</ref><ref type="bibr" target="#b49">Sluse et al. 2007</ref><ref type="bibr" target="#b51">Sluse et al. , 2011</ref><ref type="bibr" target="#b50">Sluse et al. , 2012</ref><ref type="bibr" target="#b39">O'Dowd et al. 2011;</ref><ref type="bibr" target="#b27">Guerras et al. 2013;</ref><ref type="bibr" target="#b9">Braibant et al. 2014</ref><ref type="bibr" target="#b8">Braibant et al. , 2016</ref><ref type="bibr" target="#b36">Motta et al. 2017;</ref><ref type="bibr" target="#b17">Fian et al. 2018;</ref><ref type="bibr" target="#b44">Popović et al. 2020)</ref>. These line profile deformations are most often detected ⋆ Research Director F.R.S.-FNRS as red/blue or wings/core distortions <ref type="bibr" target="#b50">(Sluse et al. 2012)</ref>. Simulations have shown that reverberation is unable to reproduce the line deformations observed in most systems when the delay is shorter than 40 days. In these cases, the line deformations can be attributed to microlensing, that is, the differential magnification of spatially and kinematically separated subregions of the BLR. Microlensing-induced line profile distortions can thus provide independent constraints on the BLR structure.</p><p xml:id="_tVtAfrA">Possible effects of microlensing on broad emission lines have been theoretically investigated by several authors <ref type="bibr" target="#b38">(Nemiroff 1988;</ref><ref type="bibr" target="#b47">Schneider &amp; Wambsganss 1990;</ref><ref type="bibr" target="#b30">Hutsemékers et al. 1994;</ref><ref type="bibr" target="#b45">Popović et al. 2001;</ref><ref type="bibr" target="#b1">Abajas et al. 2002</ref><ref type="bibr" target="#b0">Abajas et al. , 2007</ref><ref type="bibr" target="#b33">Lewis &amp; Ibata 2004;</ref><ref type="bibr" target="#b39">O'Dowd et al. 2011;</ref><ref type="bibr" target="#b18">Garsden et al. 2011;</ref><ref type="bibr" target="#b48">Simić &amp; Popović 2014)</ref>. In particular, <ref type="bibr" target="#b10">Braibant et al. (2017)</ref> have recently computed the effect of gravitational microlensing on quasar broad emission line profiles and their underlying continuum, considering representative BLR models and microlensing magnification maps. To analyze the large amount of simulated line profiles, the effects of microlensing have been summarized using four observables: µ cont , the magnification of the continuum at the wavelength of the emission line, µ BLR , the total magnification of the broad emission line, and two indices sensitive to red/blue and wings/core line profile distortions, denoted RBI and WCI, respectively. WCI, RBI diagrams that can serve as diagnostic diagrams to distinguish the different BLR models were then built. Furthermore, <ref type="bibr" target="#b29">Hutsemékers et al. (2019)</ref> have developed a Bayesian probabilistic scheme to identify the models that best reproduce the observed line profile deformations. By comparing the microlensing-induced distortions of the Hα A&amp;A proofs: manuscript no. aa41820</p><formula xml:id="formula_0">Fig. 1. Flux density ratio µ(v) = F l A /(M × F l D )</formula><p xml:id="_J5vxW3S">, where M = 1, is illustrated as a function of the Doppler velocity for the C iv λ1549Å and Hα emission lines observed in the lensed quasar Q2237+0305 (red lines). µ(v) is shown after smoothing the line profiles with a 220 km s −1 wide median filter and a 1500 km s −1 wide median filter (thin and thick red lines, respectively). Outside the displayed velocity range, µ(v) becomes unreliable due to the low line fluxes. The continuum-subtracted spectra of images A and D (F l A and F l D , respectively) are superimposed for comparison (blue and black lines, in arbitrary units). emission line observed in the lensed quasar HE0435−1223 with a large number of simulations, the authors concluded that BLR flattened geometries, such as a Keplerian disk or an equatorial wind, reproduce the observations best.</p><p xml:id="_hXy3tYa">The quadruply lensed quasar Q2237+0305 at z = 1.695 <ref type="bibr" target="#b28">(Huchra et al. 1985)</ref>, also known as the Einstein cross, has been known for years to be a privileged laboratory for microlensing studies. The very short time delays of about one day (e.g., <ref type="bibr" target="#b52">Vakulik et al. 2006</ref>) allow one to robustly interpret the spectral differences observed between the lensed images in terms of microlensing. <ref type="bibr" target="#b51">Sluse et al. (2011)</ref> measured a size of the C iv emitting region that agrees with the radius-luminosity relation derived from reverberation mapping. These authors also found that the broadest components of the C iv and C iii] lines are more strongly microlensed than the line cores, suggesting that the highest velocity parts of the profiles come from the most compact regions of the BLR. <ref type="bibr" target="#b39">O'Dowd et al. (2011)</ref> found that the differential microlensing signature observed in the C iii] emission line favors a gravitationally dominated BLR kinematics. <ref type="bibr" target="#b8">Braibant et al. (2016)</ref> used a combination of optical and nearinfrared spectra of the four images and reported the existence in image A of a large-amplitude microlensing effect that distorts the high-ionization C iv λ1549Å line and the low-ionization Hα line in different ways. Making use of a dedicated disentangling method, they argued that the differential magnification of the blue and red wings of Hα favors a flattened, rotating, lowionization region, whereas the roughly symmetric microlensing effect measured in C iv can be reproduced assuming that the high-ionization emission line is formed in a polar wind.</p><p xml:id="_AaT7hDj">In order to place these results in a more quantitative framework, we now compare these observations with simulations for a set of simple but representative BLR models. We first characterize the microlensing effect in the C iv and Hα lines of Q2237+0305 by measuring the four indices µ cont , µ BLR , RBI, and WCI (Sect. 2). These indices are then compared with those obtained from the simulations, with the aim to constrain the BLR properties (Sect. 3). Conclusions form the last section. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2." xml:id="_TyAqgdP">Measurement of magnification and distortion indices</head><p xml:id="_2eJYDrT">Quasi-simultaneous near-infrared and visible spectra of the four components of Q2237+0305 have been obtained in October 2005 <ref type="bibr" target="#b16">(Eigenbrod et al. 2008a;</ref><ref type="bibr" target="#b8">Braibant et al. 2016)</ref>. Observations, data reduction, and a first analysis focusing on microlensing are described in detail in <ref type="bibr" target="#b8">Braibant et al. (2016)</ref>. These spectra show that image A of Q2237+0305 is affected by a strong microlensing magnification effect that clearly distorts the C iv λ1549Å and Hα line profiles. Long-term monitoring of the system between 2000 and 2008 (e.g., <ref type="bibr" target="#b35">Mediavilla et al. 2015)</ref> shows that image D is most likely free of microlensing-induced variability. We then consider the spectrum of image D as the nonmicrolensed reference spectrum. The A/D macro-amplification ratio is M = 1.0 ± 0.1 <ref type="bibr" target="#b2">(Agol et al. 2000)</ref>. The microlensinginduced magnification factors of the continuum were estimated at the wavelengths of the C iv and the Hα emission lines in <ref type="bibr" target="#b8">Braibant et al. (2016)</ref>, after correcting image D for the differential extinction. These factors, denoted µ cont , are reported in Table 1. The µ BLR , RBI, and WCI indices that quantify the effect of microlensing on the broad emission line profiles were estimated following <ref type="bibr" target="#b10">Braibant et al. (2017)</ref> and <ref type="bibr" target="#b29">Hutsemékers et al. (2019)</ref>. The total microlensing-induced magnification of an emission line, µ BLR , is obtained by integrating over the line profile the ratio between the emission line flux densities in images A and D, F l</p><p xml:id="_KgmzvzY">A and F l D respectively, after subtraction of the local continuum and correction for the A/D macro-amplification ratio, that is,</p><formula xml:id="formula_1">µ BLR = 1 M v + v − F l A (v) dv v + v − F l D (v) dv .<label>(1)</label></formula><p xml:id="_bR5HpqW">C iv q=3 C iv q=1.5</p><p xml:id="_RJ5AfKP">Fig. <ref type="figure">2</ref>. Two-dimensional histograms of simulated WCI, RBI for the C iv emission line. These indices were measured from simulated line profiles that arise from the BLR models KD, PW, and EW seen at inclinations 22 • , 34 • , 44 • , and 62 • . The BLR models with an emissivity ǫ 0 (r in /r) q that sharply decreases with radius, i.e., q = 3, are illustrated in the left panel, while those that are characterized by a more slowly decreasing emissivity, i.e., q = 1.5, are illustrated in the right panel. Each model also contains a continuum-emitting disk seen under the same inclination. All continuum source radii and BLR sizes used in the simulations are considered, but only the models that reproduce the µ cont and µ BLR values measured for the C iv emission line are shown, i.e., 2.8 ≤ µ cont ≤ 3.3 and 2.24 ≤ µ BLR ≤ 2.78 (Table <ref type="table" target="#tab_0">1</ref>). The color map is logarithmic. The WCI and RBI values measured for C iv are plotted with their uncertainties as a small rectangle superimposed on the simulated WCI, RBI distributions.</p><p xml:id="_vJ3uMpy">The red/blue RBI and wings/core WCI indices characterizing the line profile distortions are estimated using</p><formula xml:id="formula_2">RBI = v + 0 log (µ(v)) dv v + 0 dv − 0 v − log (µ(v)) dv 0 v − dv<label>(2)</label></formula><p xml:id="_3mhPnSb">and</p><formula xml:id="formula_3">WCI = v + v − µ(v)/µ(v = 0) dv v + v − dv (<label>3</label></formula><formula xml:id="formula_4">)</formula><p xml:id="_JxECGUm">where</p><formula xml:id="formula_5">µ (v) = 1 M F l A (v) F l D (v) . (<label>4</label></formula><formula xml:id="formula_6">)</formula><p xml:id="_ugzxKmC">RBI is sensitive to the asymmetry of the line profile deformations. It takes non-null values when the effect of microlensing on the blue and red parts of the line is asymmetric. WCI indicates whether the whole emission line is on average more or less affected by microlensing than its center. As they are defined, both RBI and WCI are independent of M.</p><p xml:id="_Ru3zpXe">The magnification profile µ(v) is plotted in Fig. <ref type="figure">1</ref> for the C iv and the Hα emission lines. Where the line flux is too low, µ(v) becomes unreliable. The indices are therefore computed over a restricted velocity range ([−5900,+5900] km s −1 for C iv and [−6450,+6450] km s −1 for Hα) that nevertheless encompasses most of the line profiles. The µ BLR , WCI, and RBI indices are reported in Table <ref type="table" target="#tab_0">1</ref>. The errors on the indices are obtained by propagating the uncertainty of the line flux densities. This uncertainty is computed as the quadratic sum of the error on the total (line + continuum) flux density and the error on the contin-A&amp;A proofs: manuscript no. aa41820 Hα q=3</p><p xml:id="_aKfkfMD">Hα q=1.5</p><p xml:id="_sZV7byF">Fig. <ref type="figure">3</ref>. Two-dimensional histograms of simulated WCI, RBI for the Hα emission line. Same as Fig. <ref type="figure">2</ref>, but only the models that reproduce the µ cont and µ BLR values measured for the Hα emission line are shown, i.e., 2.2 ≤ µ cont ≤ 2.7 and 2.09 ≤ µ BLR ≤ 2.35 (Table <ref type="table" target="#tab_0">1</ref>). The WCI and RBI values measured for Hα are plotted with their uncertainties as a small rectangle superimposed on the simulated WCI, RBI distributions.</p><p xml:id="_s96t6tH">uum estimate, the latter being taken as the standard deviation of the continuum flux on each side of the emission lines. The exact value of the indices depends on several parameters such as the adopted underlying continuum, the velocity range, and the systemic redshift that defines the line center. The measured values are nevertheless stable within the quoted uncertainties for small variations of these parameters. They are also similar when using different smoothing values like those illustrated in Fig. <ref type="figure">1</ref>.</p><p xml:id="_Yeas7qD">It is immediately clear from the shape of µ(v) and the values of the WCI and RBI indices that the C iv and the Hα emission lines are differently affected by the microlensing effect, as already noted in <ref type="bibr" target="#b8">Braibant et al. (2016)</ref>. The significantly positive value of RBI for Hα indicates that microlensing magnifies the receding velocities to a larger extent than the approaching ones. WCI larger than one in both lines indicates a significantly higher magnification of the line wings with respect to the line center.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3." xml:id="_PBR6s9p">Comparison with simulations</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1." xml:id="_eXPWW5e">Microlensing simulations</head><p xml:id="_a6Q2cTW">We investigated the effect of gravitational microlensing on broad emission line profiles and the underlying continuum by convolving in the source plane the emission from representative BLR models with microlensing magnification maps. For the BLR models, we considered a rotating Keplerian disk (KD), as well as biconical polar (PW) and equatorial (EW) radially accelerated winds with inclinations with respect to the line of sight i = 22 • , 34 • , 44 • , 62 • . We investigated nine inner radius values for each BLR model: r in = 0.1, 0.125, 0.15, 0.175, 0.2, 0.25, 0.35, 0.5, and 0.75 r E , where r E is the microlensing Einstein radius. To compute the Einstein radius, we adopted a flat ΛCDM cosmology with H 0 = 68 km s −1 Mpc −1 and Ω m = 0.31. The source and lens redshifts are z S = 1.695 and z L = 0.0394, respectively <ref type="bibr" target="#b28">(Huchra et al. 1985)</ref>, so that the Einstein radius is r E = 3.26 × 10 −2 pc in the source plane for an average microlens mass of 0.3 M ⊙ . The outer radius was fixed to r out = 10 r in . This value largely encompasses the mean and half-light radii of the BLR models (Appendix A). The BLR models are assumed to have an emissivity ǫ = ǫ 0 (r in /r) q that either sharply decreases with radius, that is, q = 3, or more slowly, that is, q = 1.5. Twenty BLR monochromatic images corresponding to twenty spectral bins in the line profile were produced using the radiative transfer code STOKES <ref type="bibr" target="#b20">(Goosmann &amp; Gaskell 2007;</ref><ref type="bibr" target="#b34">Marin et al. 2012;</ref><ref type="bibr" target="#b21">Goosmann et al. 2014)</ref>. Each model also contains a continuum-emitting uniform disk seen under the same inclination as the BLR, and with an outer radius fixed at nine different values: r s = 0.1, 0.15, 0.2, 0.25, 0.3, 0.4, 0.5, 0.6, and 0.7 r E . These values sample the range of continuum half-light radii r 1/2 measured for Q2237+0305 and collected by <ref type="bibr" target="#b51">Sluse et al. (2011)</ref>, using r s ≃ 1.4 r 1/2 for a uniform disk. Only models with r in ≥ r s were considered. For a full description of the models and additional details, we refer to <ref type="bibr" target="#b10">Braibant et al. (2017)</ref>.</p><p xml:id="_Xpfwhyh">The effect of microlensing on the BLR was modeled using a caustic network specific to image A of Q2237+0305. The magnification map was computed using the microlens ray-tracing code <ref type="bibr" target="#b54">(Wambsganss 1999)</ref>, considering a convergence κ s = 0.394 for matter in compact objects and κ c = 0 for continuously distributed matter, with an external shear γ = 0.395 <ref type="bibr" target="#b32">(Kochanek 2004)</ref>. The map extends over a 200 r E × 200 r E area of the source plane and is sampled by 20000 × 20000 pixels. To limit the impact of preferential alignment between the symmetry axes of the BLR models and the caustic network, the map was rotated by 0 • , 30 • , 45 • , 60 • , and 90 • , and only the central 10000 × 10000 pixel parts of the rotated maps were finally used.</p><p xml:id="_WYUWHcw">Distorted line profiles were obtained from the convolution of the monochromatic images of the BLR by the magnification maps, and were computed for each position of the BLR on the magnification maps, generating ∼ 10 8 simulated profiles per map and BLR model. Given the huge amount of simulated line profiles, we focused our analysis on the indices µ cont , µ BLR , RBI, and WCI that characterize the continuum and line profile magnification and distortions, and which can be directly compared with the observations.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2." xml:id="_P4YTrgC">WCI, RBI distributions</head><p xml:id="_eT6uWQM">Figs. 2 and 3 display for C iv and Hα the WCI, RBI distributions of the simulated microlensed line profiles that arise from the magnification of the different BLR models by the caustic network. Only simulations that match the µ cont and µ BLR values are represented. The BLR models are grouped according to their geometry/kinematics, inclination, and emissivity. The ranges of WCI and RBI values that correspond to the observed distortion of the line profiles (Table <ref type="table" target="#tab_0">1</ref>) are indicated by a small rectangle superimposed on the simulated WCI, RBI distributions.</p><p xml:id="_9XAwp75">We immediately see that a wide range of WCI, RBI values is generated. With the KD BLR model, high values of both WCI and RBI are generated. With the PW and EW models, either high WCI or high RBI values can be produced, respectively. Simulations performed with the q = 3 and q = 1.5 emissivity indices are very similar, as are the simulations performed for C iv and Hα, which only differ by the constraints on µ cont and µ BLR .</p><p xml:id="_C3MXQy6">The KD model can reproduce the observed magnification and distortion indices regardless of the inclination and emissivity law. The EW model is rejected in all cases by the observations. The PW model can reproduce the C iv line deformation for the inclinations 34 • and 44 • , and the Hα line deformation for the inclinations 22 • and 34 • with the q = 1.5 emissivity law. The comparison of the observed indices with the simulations thus provide clear constraints on the geometry and kinematics of the BLR in Q2237+0305. The constraints are stronger than those derived for the lensed quasar HE0435-1223 (see Fig. <ref type="figure">2</ref> of <ref type="bibr" target="#b29">Hutsemékers et al. 2019)</ref> due to a stronger microlensing effect (µ BLR is significantly higher in Q2237+0305 than in HE0435-1223).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3." xml:id="_rNSbJ3T">Probability of the different models</head><p xml:id="_w3KRyBh">In order to identify the BLR models that best fit the observations, we computed the relative posterior probability that a given model (G, i) (where G = KD, PW, or EW, and i = 22 • , 34 • , 44 • , or 62 • ) can more easily reproduce the four observables µ cont , µ BLR , RBI, and WCI. The method is described in detail in <ref type="bibr" target="#b29">Hutsemékers et al. (2019)</ref>. Practically, we computed the likelihood of the observables for each set of parameters characterizing the simulations. We then marginalized the likelihood over r s , r in , and q, as well as over the microlensing parameters. Because the different BLR models share the same parameters and associated priors, we can quantify their relative efficiency to reproduce the data by comparing their likelihoods, that is, by normalizing the marginalized likelihood by the sum of the likelihoods associated with each model G for each inclination i. This yields the relative probability of the different models, the values of which are given in Table <ref type="table" target="#tab_1">2</ref> for the Hα and C iv BLRs independently. We see that EW BLR models are totally rejected. The KD models are the most likely for both the Hα and C iv lines. PW models are also possible, especially for the high-ionization C iv BLR. In all cases, the most likely inclinations are 34 • and 44 • . Because the exact value of RBI for the C iv line could be affected by a global blueshift of the line, we also computed the model probabilities using RBI = 0, that is, a symmetric deformation of the C iv line. We find probabilities of 66% and 34% for the KD and PW (all i) models, respectively. These values do not strongly differ from the values given in Table <ref type="table" target="#tab_1">2</ref> (75% and 26%, respectively), thus indicating that these results are robust.</p><p xml:id="_dTpHzYp">Because the Hα and C iv BLRs are expected to share the same center and inclination, we also computed the probability of combinations of Hα and C iv BLR models that have the same position on the caustic map as well as identical inclinations. The EW models being rejected, we only considered the combinations of KD and PW models. Results are given in Table <ref type="table">3</ref>. The model combinations with KD for both the Hα and C iv BLRs are clearly favored. Other combinations involving PW for C iv are also possible. The most likely inclinations are 34 • and 44 • . We also added an independent constraint on the relative size of the continuum source at the wavelengths of Hα and C iv derived from microlensing-induced time variations. This constraint affects the BLR models through the condition r in ≥ r s . Between 1500 Å and 3000 Å restframe, the size of the continuum source was found to scale as λ p , where p is between 0.8 and 1.3 <ref type="bibr" target="#b15">(Eigenbrod et al. 2008b;</ref><ref type="bibr" target="#b37">Muñoz et al. 2016;</ref><ref type="bibr" target="#b19">Goicoechea et al. 2020)</ref>. We could thus expect a factor 4 between the size of the continuum source at the wavelength of Hα and its size at the wavelength of C iv. However, because no measurement is available at the wavelength of Hα, we conservatively used r s (λ Hα ) &gt; 2 × r s (λ C iv ). As seen in Table <ref type="table">3</ref>, this additional constraint does not change the results.</p><p xml:id="_QJscFjE">In Fig. <ref type="figure" target="#fig_0">4</ref> we show two representative examples of model and map combinations that within the uncertainties reproduce the observables µ cont , µ BLR , RBI, and WCI measured for both Hα and C iv. In the left panel, the combination KD(Hα)/KD(C iv) with i = 34 • is illustrated. Due to the dense caustic network, a small difference in BLR size is sufficient to have a roughly symmetric magnification for the C iv BLR and an asymmetric one for the Hα BLR, considering the same BLR model. The right panel shows a KD(Hα)/PW(C iv) combination at i = 34 • . In this case, the BLR size is larger and more caustics are involved in a complex magnification pattern of the BLR. Multi-epoch data should allow us to disentangle these combinations. In these examples the Hα BLR appears larger than the C iv BLR, but it should be Fig. <ref type="figure">5</ref>. Relative probabilities (in percent) of the BLR mean radius r m and half-light radius r 1/2 in r E units. Blue refers to the C iv BLR, and red to the Hα BLR. emphasized that we could not derive any significant information on their relative sizes on the basis of our data set (Sect. 3.4).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.4." xml:id="_53vrGWp">Size of the BLR and black hole mass</head><p xml:id="_2HKhGGw">By marginalizing over all parameters but r in , we can estimate the most likely BLR radius. However, r in does not properly represent the size of the BLR, which also depends on the light distribution. We therefore computed the mean and half-light radii for the different models as described in Appendix A, and estimated their relative probabilities in nine bins between the minimum and maximum values. The resulting probabilities are shown in Fig. <ref type="figure">5</ref>. There is no significant difference between the sizes of the C iv and Hα BLRs. From the probability distributions, we estimate the mean radius of the BLR to be r m ≃ 1.4±0.6 r E ≃ 54±23 light-days, and the half-light radius to be r 1/2 ≃ 1.2±0.5 r E ≃ 47±19 light-days. The latter value is in excellent agreement with the C iv BLR half-light radius derived from microlensinginduced time variability of the C iv line <ref type="bibr" target="#b51">(Sluse et al. 2011)</ref>.</p><p xml:id="_DDU9f4t">Our estimate of the BLR radius may be compared to the radius-luminosity (R − L) relations derived from reverberation mapping. Using the relations given by <ref type="bibr" target="#b31">Kaspi et al. (2021)</ref> for the C iv BLR, and the luminosity reported by <ref type="bibr" target="#b3">Assef et al. (2011)</ref> (corrected for our cosmological parameters, and assuming λL λ (1350Å) = λL λ (1450Å) as in <ref type="bibr" target="#b53">Vestergaard &amp; Peterson 2006)</ref>, we obtain R(C iv) ≃ 55±30 light-days, which is in excellent agreement with our value. As shown by <ref type="bibr" target="#b26">Grier et al. (2017b)</ref>, the R − L relation for the Balmer line BLR is more complex: many measurements lie below the canonical relation of <ref type="bibr" target="#b4">Bentz et al. (2013)</ref>, thus possibly indicating selection effects or different BLR sizes in high-luminosity quasars. We translate our Hα BLR size measurement into an Hβ BLR size using the conversion r 1/2 (Hβ) ∼ 0.7 × r 1/2 (Hα) ∼ 33 light-days, which is derived visually from Fig. <ref type="figure">10</ref> of <ref type="bibr" target="#b26">Grier et al. (2017b)</ref>. This value is one order of magnitude lower than the size derived from the R − L relation of <ref type="bibr" target="#b4">Bentz et al. (2013)</ref>, which yields R(Hβ) ∼ 400 light-days using log[λL λ (5100Å)] ≃ 46 <ref type="bibr" target="#b3">(Assef et al. 2011)</ref>. The microlensing estimate of the Hβ BLR radius thus lies much below the canonical relation, but it does agree with the deviation reported by <ref type="bibr" target="#b26">Grier et al. (2017b)</ref> for high-luminosity objects. Because our measurements are not affected by the same selection effects as reverberation mapping, this might point to a real physi-cal effect, possibly related to the accretion rate <ref type="bibr" target="#b14">(Du et al. 2016b</ref>). Indeed, Q2237+0305 has a high dimensionless accretion rateṀ = 370, computed using Eq. 3 of <ref type="bibr" target="#b14">Du et al. (2016b)</ref>.</p><p xml:id="_39FaE8u">Assuming virial motion, the mass of the black hole can be estimated using</p><formula xml:id="formula_7">M BH = f R BLR V 2 G ,<label>(5)</label></formula><p xml:id="_xxu8pja">where V is the velocity full width at half maximum (FWHM) of the broad emission line, f the virial factor and G the gravitational constant. For a thin Keplerian disk (our most likely model), <ref type="bibr" target="#b11">Decarli et al. (2008)</ref> give</p><formula xml:id="formula_8">f = (4 sin 2 i) −1 .<label>(6)</label></formula><p xml:id="_YdXjHyW">For the broad lines observed in the spectra of image D (unaffected by microlensing), we measure FWHM(C iv) = 3800±400 km s −1 and FWHM(Hα) = 4000±400 km s −1 by fitting a set of broad and narrow lines. For the narrow lines, we use FWHM ≃ 1070 km s −1 estimated from the [OIII] lines <ref type="bibr" target="#b24">(Greene et al. 2010)</ref>.</p><p xml:id="_WJUbG22">The derived FWHMs of the C iv and Hα broad lines agree with those obtained by <ref type="bibr" target="#b3">Assef et al. (2011)</ref> and <ref type="bibr" target="#b24">Greene et al. (2010)</ref>. According to Eq. 5, similar FWHMs of the C iv and Hα broad lines are expected if the BLRs have similar radii, as observed.</p><p xml:id="_UBmKPkK">Using i = 40±5 • , R BLR = 47±19 light-days, and V = 3900±500 km s −1 , we finally obtain M BH = 9 ± 5 × 10 7 M ⊙ .</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4." xml:id="_angyQP3">Conclusions</head><p xml:id="_CzF7j2F">We have compared quasi-simultaneous observations of the microlensing effect on the Hα and C iv broad emission lines in the quasar Q2237+0305 with simulations based on simple but representative BLR models and magnification maps. Our study shows that the observed microlensing effect, characterized by a set of four indices, can be reproduced with some of the considered BLR models, -the equatorial wind model is rejected, -for both the Hα and the C iv BLRs the most likely model is the Keplerian disk; models with a polar wind for the highionization C iv BLR are possible, but less likely, -the most likely inclination of the system with respect to the line of sight is about 40 • , as expected for a type 1 AGN and in agreement with the value derived from microlensing time series <ref type="bibr" target="#b43">(Poindexter &amp; Kochanek 2010)</ref>, -the BLR half-light radius is ≃ 47±19 light-days; the difference between the sizes the C iv and Hα BLRs cannot be estimated from our data set, -the C iv BLR radius agrees with the value obtained from microlensing time series and with the R − L relation derived from reverberation mapping, while the Balmer line BLR is one order of magnitude smaller than the value expected from the R − L relation of <ref type="bibr" target="#b4">Bentz et al. (2013)</ref>.</p><p xml:id="_9bhwG3a">The different deformations of the Hα and C iv emission lines observed at the same epoch led <ref type="bibr" target="#b10">Braibant et al. (2017)</ref> to suggest that the geometry and kinematics of the Hα and C iv BLRs were different. However, as illustrated in Fig. <ref type="figure" target="#fig_0">4</ref>, small differences in BLR sizes are sufficient to produce different microlensing signatures with the same BLR model when the caustic network is dense. The most likely model we found for the Hα BLR in Q2237+305, the Keplerian disk, was also suggested in the lensed quasar HE0435-1223 using a similar analysis <ref type="bibr" target="#b29">(Hutsemékers et al. 2019)</ref>. This model does agree with the BLR models favored by reverberation mapping and near-infrared interferometry studies of other AGNs (Sect. 1). Microlensing clearly allows us to independently constrain the BLR geometry and kinematics in lensed quasars. While interferometry is currently limited to a few nearby AGNs, and reverberation mapping to low-luminosity low-redshift objects due to the very long response time in luminous and high-redshift objects, microlensing can explore the BLR in bright distant quasars as far as they are lensed and show strong line deformations. As shown in Figs. <ref type="figure">2  and 3</ref>, high WCI values together with high RBI values can only be reproduced by the KD model. Single-epoch observations of strong, simultaneous, red/blue and wings/core distortions can thus be sufficient to discard the PW and EW models. Multiepoch data would nevertheless be needed to catch the most sensitive line profile deformations (or place limits on them) and to test more sophisticated BLR models, in particular, by making use of the full µ(v) magnification profile. </p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Fig. 4 .</head><label>4</label><figDesc xml:id="_tPaAzA2">Fig. 4. Hα (in red) and C iv (in blue) BLR intensity maps superimposed on the magnification map with 0 • rotation. These combinations of models and maps reproduce the measurements within the uncertainties. Left: The Hα BLR model is characterized by the following parameters: KD, i = 34 • , q = 3, r s = 0.15 r E , and r in = 0.175 r E , and the C iv BLR model is characterized by KD, i = 34 • , q = 3, r s = 0.10 r E , and r in = 0.10 r E . The size of the map is 1.5 r E × 1.5 r E . Right: The Hα BLR model is characterized by KD, i = 34 • , q = 3, r s = 0.15 r E , and r in = 0.75 r E , and the C iv BLR model is characterized by PW, i = 34 • , q = 1.5, r s = 0.10 r E , and r in = 0.25 r E . The size of the map is 5 r E × 5 r E .</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1 .</head><label>1</label><figDesc xml:id="_e6AxXMe">Measured magnification and distortion indices</figDesc><table><row><cell>Line</cell><cell>µ cont</cell><cell>µ BLR</cell><cell>WCI</cell><cell>RBI</cell></row><row><cell cols="5">C iv 3.05±0.25 2.51±0.27 1.57±0.05 0.05±0.03 Hα 2.45±0.25 2.22±0.13 1.48±0.06 0.11±0.03</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 2 .</head><label>2</label><figDesc xml:id="_hWyPUTB">Probability (in %) of the different BLR models for Hα and C iv</figDesc><table><row><cell></cell><cell></cell><cell cols="4">Hα KD PW EW ALL</cell></row><row><cell></cell><cell cols="2">22 • 34 • 44 • 62 • All i 88 24 27 24 13</cell><cell>2 7 2 0 11</cell><cell>0 0 0 0 0</cell><cell>26 34 26 13</cell></row><row><cell></cell><cell></cell><cell></cell><cell>C iv</cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell cols="4">KD PW EW ALL</cell></row><row><cell></cell><cell cols="2">22 • 34 • 44 • 62 • All i 75 22 23 20 10</cell><cell>1 10 15 0 26</cell><cell>0 0 0 0 0</cell><cell>23 33 35 10</cell></row><row><cell cols="7">Table 3. Probability (in %) of [Hα/C iv] BLR model combinations</cell></row><row><cell></cell><cell cols="6">All r s KD/KD KD/PW PW/KD PW/PW ALL</cell></row><row><cell>22 • 34 • 44 • 62 • All i</cell><cell>20 22 18 7 67</cell><cell>0 8 6 0 14</cell><cell>0 1 1 0 2</cell><cell></cell><cell>3 10 3 0 16</cell><cell>23 41 28 7</cell></row><row><cell></cell><cell cols="6">r s (λ Hα ) &gt; 2 × r s (λ C iv ) KD/KD KD/PW PW/KD PW/PW ALL</cell></row><row><cell>22 • 34 • 44 • 62 • All i</cell><cell>22 22 22 8 74</cell><cell>0 7 7 0 14</cell><cell>0 0 0 0 0</cell><cell></cell><cell>2 9 2 0 13</cell><cell>24 38 31 8</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table A .</head><label>A</label><figDesc xml:id="_w7Asgga">1. BLR mean and half-light radii for the different models</figDesc><table><row><cell>Model i ( • ) KD 22 KD 34 KD 44 KD 62 PW 22 PW 34 PW 44 PW 62 EW 22 EW 34 EW 44 EW 62 KD 22 KD 34 KD 44 KD 62 PW 22 PW 34 PW 44 PW 62 EW 22 EW 34 EW 44 EW 62</cell><cell>q 1.5 1.5 1.5 1.5 1.5 1.5 1.5 1.5 1.5 1.5 1.5 1.5 3.0 3.0 3.0 3.0 3.0 3.0 3.0 3.0 3.0 3.0 3.0 3.0</cell><cell>r m /r in r 1/2 /r in 4.55 4.06 4.32 3.86 4.10 3.64 3.60 3.08 4.83 4.60 4.76 4.38 4.71 4.40 4.80 4.56 5.89 5.96 5.60 5.62 5.32 5.26 4.69 4.42 2.47 1.72 2.35 1.64 2.23 1.56 1.96 1.38 3.06 2.36 3.01 2.24 2.98 2.16 3.04 2.22 3.73 2.94 3.54 2.78 3.37 2.64 2.97 2.26</cell></row></table></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="1" xml:id="_ksRSh8X">Eq. A.1 corrects Eq. 8 given in<ref type="bibr" target="#b10">Braibant et al. (2017)</ref>.</note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="_ncCymMc"><p xml:id="_sSH5t4e">Acknowledgements. We warmly thank Lorraine Braibant for her contribution to the earliest phases of this project. We also thank the referee for useful suggestions. This work was supported by the F.R.S.-FNRS under grants IISN 4.4503.19 and PDR T.0116.21.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_MCPCfqd">Appendix A: BLR mean and half-light radii</head><p xml:id="_y5795W2">The mean emission radius, r m , is defined as the radial distance weighted by the surface brightness of the BLR seen in projection onto the plane of the sky:</p><p xml:id="_pfhwvxv">where (ρ, θ) are the polar coordinates in the plane of the sky, and I is the intensity of the emission from the BLR integrated over the spectral dimension 1 . The half-light radius r 1/2 is defined by the equation</p><p xml:id="_FHuCVV4">The values of r m and r 1/2 are given in Table <ref type="table">A</ref>.1 in units of the BLR inner radius r in for the different models.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">C</forename><surname>Abajas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Mediavilla</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>Muñoz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Gómez-Álvarez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Gil-Merino</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_PRtcD9f">ApJ</title>
+		<imprint>
+			<biblScope unit="volume">658</biblScope>
+			<biblScope unit="page">748</biblScope>
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Abajas, C., Mediavilla, E., Muñoz, J. A., Gómez-Álvarez, P., &amp; Gil-Merino, R. 2007, ApJ, 658, 748</note>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">C</forename><surname>Abajas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Mediavilla</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>Muñoz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">Č</forename><surname>Popović</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Oscoz</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_7euSg9v">ApJ</title>
+		<imprint>
+			<biblScope unit="volume">576</biblScope>
+			<biblScope unit="page">640</biblScope>
+			<date type="published" when="2002" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Abajas, C., Mediavilla, E., Muñoz, J. A., Popović, L.Č., &amp; Oscoz, A. 2002, ApJ, 576, 640</note>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">E</forename><surname>Agol</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Jones</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Blaes</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_2Z8WAuP">ApJ</title>
+		<imprint>
+			<biblScope unit="volume">545</biblScope>
+			<biblScope unit="page">657</biblScope>
+			<date type="published" when="2000" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Agol, E., Jones, B., &amp; Blaes, O. 2000, ApJ, 545, 657</note>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">J</forename><surname>Assef</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">D</forename><surname>Denney</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">S</forename><surname>Kochanek</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_8QbqZyz">ApJ</title>
+		<imprint>
+			<biblScope unit="volume">742</biblScope>
+			<biblScope unit="page">93</biblScope>
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Assef, R. J., Denney, K. D., Kochanek, C. S., et al. 2011, ApJ, 742, 93</note>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">C</forename><surname>Bentz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">D</forename><surname>Denney</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">J</forename><surname>Grier</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_QBmWTaV">ApJ</title>
+		<imprint>
+			<biblScope unit="volume">767</biblScope>
+			<biblScope unit="page">149</biblScope>
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Bentz, M. C., Denney, K. D., Grier, C. J., et al. 2013, ApJ, 767, 149</note>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">C</forename><surname>Bentz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">L</forename><surname>Walsh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">J</forename><surname>Barth</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_PdHN9tB">ApJ</title>
+		<imprint>
+			<biblScope unit="volume">705</biblScope>
+			<biblScope unit="page">199</biblScope>
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Bentz, M. C., Walsh, J. L., Barth, A. J., et al. 2009, ApJ, 705, 199</note>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">C</forename><surname>Bentz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">L</forename><surname>Walsh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">J</forename><surname>Barth</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_4hHyvEF">ApJ</title>
+		<imprint>
+			<biblScope unit="volume">716</biblScope>
+			<biblScope unit="page">993</biblScope>
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Bentz, M. C., Walsh, J. L., Barth, A. J., et al. 2010, ApJ, 716, 993</note>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">D</forename><surname>Blandford</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">F</forename><surname>Mckee</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_EYNMy5H">ApJ</title>
+		<imprint>
+			<biblScope unit="volume">255</biblScope>
+			<biblScope unit="page">419</biblScope>
+			<date type="published" when="1982" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Blandford, R. D. &amp; McKee, C. F. 1982, ApJ, 255, 419</note>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">L</forename><surname>Braibant</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Hutsemékers</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Sluse</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Anguita</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_22UPjQD">A&amp;A</title>
+		<imprint>
+			<biblScope unit="volume">592</biblScope>
+			<biblScope unit="page">A23</biblScope>
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Braibant, L., Hutsemékers, D., Sluse, D., &amp; Anguita, T. 2016, A&amp;A, 592, A23</note>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">L</forename><surname>Braibant</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Hutsemékers</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Sluse</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Anguita</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">J</forename><surname>García-Vergara</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_8Na68zM">A&amp;A</title>
+		<imprint>
+			<biblScope unit="volume">565</biblScope>
+			<biblScope unit="page">L11</biblScope>
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Braibant, L., Hutsemékers, D., Sluse, D., Anguita, T., &amp; García-Vergara, C. J. 2014, A&amp;A, 565, L11</note>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">L</forename><surname>Braibant</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Hutsemékers</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Sluse</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Goosmann</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_GHCxkqp">A&amp;A</title>
+		<imprint>
+			<biblScope unit="volume">607</biblScope>
+			<biblScope unit="page">A32</biblScope>
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Braibant, L., Hutsemékers, D., Sluse, D., &amp; Goosmann, R. 2017, A&amp;A, 607, A32</note>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">R</forename><surname>Decarli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Dotti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Fontana</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Haardt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_M5kR4gr">MNRAS</title>
+		<imprint>
+			<biblScope unit="volume">386</biblScope>
+			<biblScope unit="page">L15</biblScope>
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Decarli, R., Dotti, M., Fontana, M., &amp; Haardt, F. 2008, MNRAS, 386, L15</note>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">D</forename><surname>Denney</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">M</forename><surname>Peterson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">W</forename><surname>Pogge</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_AJsn3jF">ApJ</title>
+		<imprint>
+			<biblScope unit="volume">721</biblScope>
+			<biblScope unit="page">715</biblScope>
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Denney, K. D., Peterson, B. M., Pogge, R. W., et al. 2010, ApJ, 721, 715</note>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">P</forename><surname>Du</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K.-X</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Hu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_SZRR2c3">ApJ</title>
+		<imprint>
+			<biblScope unit="volume">820</biblScope>
+			<biblScope unit="page">27</biblScope>
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Du, P., Lu, K.-X., Hu, C., et al. 2016a, ApJ, 820, 27</note>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">P</forename><surname>Du</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K.-X</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z.-X</forename><surname>Zhang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_FZ5Tx6G">ApJ</title>
+		<imprint>
+			<biblScope unit="volume">825</biblScope>
+			<biblScope unit="page">126</biblScope>
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Du, P., Lu, K.-X., Zhang, Z.-X., et al. 2016b, ApJ, 825, 126</note>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">A</forename><surname>Eigenbrod</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Courbin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Meylan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_7mTsWzC">A&amp;A</title>
+		<imprint>
+			<biblScope unit="volume">490</biblScope>
+			<biblScope unit="page">933</biblScope>
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Eigenbrod, A., Courbin, F., Meylan, G., et al. 2008b, A&amp;A, 490, 933</note>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">A</forename><surname>Eigenbrod</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Courbin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Sluse</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Meylan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Agol</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_g5grfrN">A&amp;A</title>
+		<imprint>
+			<biblScope unit="volume">480</biblScope>
+			<biblScope unit="page">647</biblScope>
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Eigenbrod, A., Courbin, F., Sluse, D., Meylan, G., &amp; Agol, E. 2008a, A&amp;A, 480, 647</note>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">C</forename><surname>Fian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Guerras</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Mediavilla</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_f3DHu3F">ApJ</title>
+		<imprint>
+			<biblScope unit="volume">859</biblScope>
+			<biblScope unit="page">50</biblScope>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Fian, C., Guerras, E., Mediavilla, E., et al. 2018, ApJ, 859, 50</note>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">H</forename><surname>Garsden</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">F</forename><surname>Bate</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">F</forename><surname>Lewis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_nRvbUaP">MNRAS</title>
+		<imprint>
+			<biblScope unit="volume">418</biblScope>
+			<biblScope unit="page">1012</biblScope>
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Garsden, H., Bate, N. F., &amp; Lewis, G. F. 2011, MNRAS, 418, 1012</note>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">J</forename><surname>Goicoechea</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">P</forename><surname>Artamonov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><forename type="middle">N</forename><surname>Shalyapin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_a9sVv3Q">A&amp;A</title>
+		<imprint>
+			<biblScope unit="volume">637</biblScope>
+			<biblScope unit="page">A89</biblScope>
+			<date type="published" when="2020" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Goicoechea, L. J., Artamonov, B. P., Shalyapin, V. N., et al. 2020, A&amp;A, 637, A89</note>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">W</forename><surname>Goosmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">M</forename><surname>Gaskell</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_fuCpT6m">A&amp;A</title>
+		<imprint>
+			<biblScope unit="volume">465</biblScope>
+			<biblScope unit="page">129</biblScope>
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Goosmann, R. W. &amp; Gaskell, C. M. 2007, A&amp;A, 465, 129</note>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<monogr>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">W</forename><surname>Goosmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">M</forename><surname>Gaskell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Marin</surname></persName>
+		</author>
+		<title level="m" xml:id="_vVqxPwV">Advances in Space Research</title>
+				<imprint>
+			<date type="published" when="2014" />
+			<biblScope unit="volume">54</biblScope>
+			<biblScope unit="page">1341</biblScope>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Goosmann, R. W., Gaskell, C. M., &amp; Marin, F. 2014, Advances in Space Re- search, 54, 1341</note>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">A</forename><surname>Amorim</surname></persName>
+			<affiliation>
+				<orgName type="collaboration">Gravity Collaboration</orgName>
+			</affiliation>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Bauböck</surname></persName>
+			<affiliation>
+				<orgName type="collaboration">Gravity Collaboration</orgName>
+			</affiliation>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_PAATaaR">A&amp;A</title>
+		<imprint>
+			<biblScope unit="volume">648</biblScope>
+			<biblScope unit="page">A117</biblScope>
+			<date type="published" when="2021" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Gravity Collaboration, Amorim, A., Bauböck, M., et al. 2021, A&amp;A, 648, A117</note>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">E</forename><surname>Sturm</surname></persName>
+			<affiliation>
+				<orgName type="collaboration">Gravity Collaboration</orgName>
+			</affiliation>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Dexter</surname></persName>
+			<affiliation>
+				<orgName type="collaboration">Gravity Collaboration</orgName>
+			</affiliation>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_JDxZMA5">Nature</title>
+		<imprint>
+			<biblScope unit="volume">563</biblScope>
+			<biblScope unit="page">657</biblScope>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Gravity Collaboration, Sturm, E., Dexter, J., et al. 2018, Nature, 563, 657</note>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">E</forename><surname>Greene</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">Y</forename><surname>Peng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">R</forename><surname>Ludwig</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_SqhwZUN">ApJ</title>
+		<imprint>
+			<biblScope unit="volume">709</biblScope>
+			<biblScope unit="page">937</biblScope>
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Greene, J. E., Peng, C. Y., &amp; Ludwig, R. R. 2010, ApJ, 709, 937</note>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">J</forename><surname>Grier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Pancoast</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">J</forename><surname>Barth</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_cGez5cb">ApJ</title>
+		<imprint>
+			<biblScope unit="volume">849</biblScope>
+			<biblScope unit="page">146</biblScope>
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Grier, C. J., Pancoast, A., Barth, A. J., et al. 2017a, ApJ, 849, 146</note>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">J</forename><surname>Grier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">R</forename><surname>Trump</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Shen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_4SuuNw5">ApJ</title>
+		<imprint>
+			<biblScope unit="volume">851</biblScope>
+			<biblScope unit="page">21</biblScope>
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Grier, C. J., Trump, J. R., Shen, Y., et al. 2017b, ApJ, 851, 21</note>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">E</forename><surname>Guerras</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Mediavilla</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Jimenez-Vicente</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_aXTeJ2e">ApJ</title>
+		<imprint>
+			<biblScope unit="volume">764</biblScope>
+			<biblScope unit="page">160</biblScope>
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Guerras, E., Mediavilla, E., Jimenez-Vicente, J., et al. 2013, ApJ, 764, 160</note>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">J</forename><surname>Huchra</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Gorenstein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Kent</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_EC4XWs4">AJ</title>
+		<imprint>
+			<biblScope unit="volume">90</biblScope>
+			<biblScope unit="page">691</biblScope>
+			<date type="published" when="1985" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Huchra, J., Gorenstein, M., Kent, S., et al. 1985, AJ, 90, 691</note>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">D</forename><surname>Hutsemékers</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Braibant</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Sluse</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Goosmann</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_j6HJWPB">A&amp;A</title>
+		<imprint>
+			<biblScope unit="volume">629</biblScope>
+			<biblScope unit="page">A43</biblScope>
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Hutsemékers, D., Braibant, L., Sluse, D., &amp; Goosmann, R. 2019, A&amp;A, 629, A43</note>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">D</forename><surname>Hutsemékers</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Surdej</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Van Drom</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_zxfyEpt">Ap&amp;SS</title>
+		<imprint>
+			<biblScope unit="volume">216</biblScope>
+			<biblScope unit="page">361</biblScope>
+			<date type="published" when="1994" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Hutsemékers, D., Surdej, J., &amp; van Drom, E. 1994, Ap&amp;SS, 216, 361</note>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">S</forename><surname>Kaspi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">N</forename><surname>Brandt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Maoz</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_mzKvzwP">ApJ</title>
+		<imprint>
+			<biblScope unit="volume">915</biblScope>
+			<biblScope unit="page">129</biblScope>
+			<date type="published" when="2021" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Kaspi, S., Brandt, W. N., Maoz, D., et al. 2021, ApJ, 915, 129</note>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">S</forename><surname>Kochanek</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_VkTd2Jq">ApJ</title>
+		<imprint>
+			<biblScope unit="volume">605</biblScope>
+			<biblScope unit="page">58</biblScope>
+			<date type="published" when="2004" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Kochanek, C. S. 2004, ApJ, 605, 58</note>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">F</forename><surname>Lewis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">A</forename><surname>Ibata</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_fcXaEGb">MNRAS</title>
+		<imprint>
+			<biblScope unit="volume">348</biblScope>
+			<biblScope unit="page">24</biblScope>
+			<date type="published" when="2004" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Lewis, G. F. &amp; Ibata, R. A. 2004, MNRAS, 348, 24</note>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">F</forename><surname>Marin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">W</forename><surname>Goosmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">M</forename><surname>Gaskell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Porquet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Dovčiak</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_mXnggJn">A&amp;A</title>
+		<imprint>
+			<biblScope unit="volume">548</biblScope>
+			<biblScope unit="page">A121</biblScope>
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Marin, F., Goosmann, R. W., Gaskell, C. M., Porquet, D., &amp; Dovčiak, M. 2012, A&amp;A, 548, A121</note>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">E</forename><surname>Mediavilla</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Jimenez-Vicente</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>Muñoz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Mediavilla</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Ariza</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_u7pNyAp">ApJ</title>
+		<imprint>
+			<biblScope unit="volume">798</biblScope>
+			<biblScope unit="page">138</biblScope>
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Mediavilla, E., Jimenez-Vicente, J., Muñoz, J. A., Mediavilla, T., &amp; Ariza, O. 2015, ApJ, 798, 138</note>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">V</forename><surname>Motta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Mediavilla</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Rojas</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_F6Kvkt7">ApJ</title>
+		<imprint>
+			<biblScope unit="volume">835</biblScope>
+			<biblScope unit="page">132</biblScope>
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Motta, V., Mediavilla, E., Rojas, K., et al. 2017, ApJ, 835, 132</note>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>Muñoz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Vives-Arias</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">M</forename><surname>Mosquera</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_72Av6qa">ApJ</title>
+		<imprint>
+			<biblScope unit="volume">817</biblScope>
+			<biblScope unit="page">155</biblScope>
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Muñoz, J. A., Vives-Arias, H., Mosquera, A. M., et al. 2016, ApJ, 817, 155</note>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">J</forename><surname>Nemiroff</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_5jM2wyr">ApJ</title>
+		<imprint>
+			<biblScope unit="volume">335</biblScope>
+			<biblScope unit="page">593</biblScope>
+			<date type="published" when="1988" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Nemiroff, R. J. 1988, ApJ, 335, 593</note>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">M</forename><surname>O'dowd</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">F</forename><surname>Bate</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">L</forename><surname>Webster</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Wayth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Labrie</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_3DHBPtY">MNRAS</title>
+		<imprint>
+			<biblScope unit="volume">415</biblScope>
+			<date type="published" when="1985" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">O&apos;Dowd, M., Bate, N. F., Webster, R. L., Wayth, R., &amp; Labrie, K. 2011, MNRAS, 415, 1985</note>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<monogr>
+		<title level="m" type="main" xml:id="_qqKAABR">A&amp;A proofs: manuscript no. aa41820</title>
+		<imprint/>
+	</monogr>
+	<note type="raw_reference">A&amp;A proofs: manuscript no. aa41820</note>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">A</forename><surname>Pancoast</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">J</forename><surname>Brewer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Treu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_8QhMmKu">MNRAS</title>
+		<imprint>
+			<biblScope unit="volume">445</biblScope>
+			<biblScope unit="page">3073</biblScope>
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Pancoast, A., Brewer, B. J., Treu, T., et al. 2014, MNRAS, 445, 3073</note>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">M</forename><surname>Peterson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_geEytJ6">PASP</title>
+		<imprint>
+			<biblScope unit="volume">105</biblScope>
+			<biblScope unit="page">247</biblScope>
+			<date type="published" when="1993" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Peterson, B. M. 1993, PASP, 105, 247</note>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">S</forename><surname>Poindexter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">S</forename><surname>Kochanek</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_zGSuC8r">ApJ</title>
+		<imprint>
+			<biblScope unit="volume">712</biblScope>
+			<biblScope unit="page">668</biblScope>
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Poindexter, S. &amp; Kochanek, C. S. 2010, ApJ, 712, 668</note>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">Č</forename><surname>Popović</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><forename type="middle">L</forename><surname>Afanasiev</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Moiseev</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_RD7kDfQ">A&amp;A</title>
+		<imprint>
+			<biblScope unit="volume">634</biblScope>
+			<biblScope unit="page">A27</biblScope>
+			<date type="published" when="2020" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Popović, L.Č., Afanasiev, V. L., Moiseev, A., et al. 2020, A&amp;A, 634, A27</note>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">Č</forename><surname>Popović</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">G</forename><surname>Mediavilla</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>Muñoz</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_5DjXVPR">A&amp;A</title>
+		<imprint>
+			<biblScope unit="volume">378</biblScope>
+			<biblScope unit="page">295</biblScope>
+			<date type="published" when="2001" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Popović, L.Č., Mediavilla, E. G., &amp; Muñoz, J. A. 2001, A&amp;A, 378, 295</note>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">T</forename><surname>Richards</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">R</forename><surname>Keeton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Pindor</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_ENTjDbF">ApJ</title>
+		<imprint>
+			<biblScope unit="volume">610</biblScope>
+			<biblScope unit="page">679</biblScope>
+			<date type="published" when="2004" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Richards, G. T., Keeton, C. R., Pindor, B., et al. 2004, ApJ, 610, 679</note>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">P</forename><surname>Schneider</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Wambsganss</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_tqhXfjB">A&amp;A</title>
+		<imprint>
+			<biblScope unit="volume">237</biblScope>
+			<biblScope unit="page">42</biblScope>
+			<date type="published" when="1990" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Schneider, P. &amp; Wambsganss, J. 1990, A&amp;A, 237, 42</note>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">S</forename><surname>Simić</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">Č</forename><surname>Popović</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_rSYRvs8">Advances in Space Research</title>
+		<imprint>
+			<biblScope unit="volume">54</biblScope>
+			<biblScope unit="page">1439</biblScope>
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Simić, S. &amp; Popović, L.Č. 2014, Advances in Space Research, 54, 1439</note>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">D</forename><surname>Sluse</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J.-F</forename><surname>Claeskens</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Hutsemékers</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Surdej</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_eEQFYcD">A&amp;A</title>
+		<imprint>
+			<biblScope unit="volume">468</biblScope>
+			<biblScope unit="page">885</biblScope>
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Sluse, D., Claeskens, J.-F., Hutsemékers, D., &amp; Surdej, J. 2007, A&amp;A, 468, 885</note>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">D</forename><surname>Sluse</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Hutsemékers</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Courbin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Meylan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Wambsganss</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_ZGArk5p">A&amp;A</title>
+		<imprint>
+			<biblScope unit="volume">544</biblScope>
+			<biblScope unit="page">A62</biblScope>
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Sluse, D., Hutsemékers, D., Courbin, F., Meylan, G., &amp; Wambsganss, J. 2012, A&amp;A, 544, A62</note>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">D</forename><surname>Sluse</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Schmidt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Courbin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_dMwRchN">A&amp;A</title>
+		<imprint>
+			<biblScope unit="volume">528</biblScope>
+			<biblScope unit="page">A100</biblScope>
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Sluse, D., Schmidt, R., Courbin, F., et al. 2011, A&amp;A, 528, A100</note>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">V</forename><surname>Vakulik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Schild</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Dudinov</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_DZKTJzq">A&amp;A</title>
+		<imprint>
+			<biblScope unit="volume">447</biblScope>
+			<biblScope unit="page">905</biblScope>
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Vakulik, V., Schild, R., Dudinov, V., et al. 2006, A&amp;A, 447, 905</note>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">M</forename><surname>Vestergaard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">M</forename><surname>Peterson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_yHbKjfF">ApJ</title>
+		<imprint>
+			<biblScope unit="volume">641</biblScope>
+			<biblScope unit="page">689</biblScope>
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Vestergaard, M. &amp; Peterson, B. M. 2006, ApJ, 641, 689</note>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">J</forename><surname>Wambsganss</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_wHAVhyX">Journal of Computational and Applied Mathematics</title>
+		<imprint>
+			<biblScope unit="volume">109</biblScope>
+			<biblScope unit="page">353</biblScope>
+			<date type="published" when="1999" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Wambsganss, J. 1999, Journal of Computational and Applied Mathematics, 109, 353</note>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">B</forename><surname>Wayth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>O'dowd</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">L</forename><surname>Webster</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_fypt2zk">MNRAS</title>
+		<imprint>
+			<biblScope unit="volume">359</biblScope>
+			<biblScope unit="page">561</biblScope>
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Wayth, R. B., O&apos;Dowd, M., &amp; Webster, R. L. 2005, MNRAS, 359, 561</note>
+</biblStruct>
+
+<biblStruct xml:id="b56">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">M</forename><surname>Xiao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Du</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Horne</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_nc2XYgH">ApJ</title>
+		<imprint>
+			<biblScope unit="volume">864</biblScope>
+			<biblScope unit="page">109</biblScope>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Xiao, M., Du, P., Horne, K., et al. 2018, ApJ, 864, 109</note>
+</biblStruct>
+
+<biblStruct xml:id="b57">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">Z.-X</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Du</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">S</forename><surname>Smith</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_tbk9G47">ApJ</title>
+		<imprint>
+			<biblScope unit="volume">876</biblScope>
+			<biblScope unit="page">49</biblScope>
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Zhang, Z.-X., Du, P., Smith, P. S., et al. 2019, ApJ, 876, 49</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

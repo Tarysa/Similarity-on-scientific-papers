@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block head %}
+{% endblock %}
+
+{% block body %}
+
+<!-- Display a table with papers -->
+
+    <a href="/"><img class="back_home" src="/static/images/home3.png"> </a>
+    <table>
+            <!-- Display the table headers -->
+            <tr>
+                <!-- columns is the list of columns name in database paper-->
+                {% for column in columns %}
+                    <!-- We don't want to display the date of download -->
+                    {% if column != 'DateofDownload' %}
+                        <th>{{column}}</th>
+                    {% endif %}
+                {% endfor %}
+            </tr>
+            <!-- Display the table rows -->
+            {% for paper in papers %}
+                <tr>
+                    {% for column in columns %}
+                        {% if column=='DownloadLink' %}
+                            <!-- 'DownloadLink is treated separately because we want to display it as a link-->
+                            <td><a href={{paper[column]}}>{{paper[column]}}</a></td>
+                        {% elif column!='DateofDownload' %}
+                            <td> {{paper[column]}}</td>
+                        {% endif %}
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+
+    </table>
+
+{% endblock %}

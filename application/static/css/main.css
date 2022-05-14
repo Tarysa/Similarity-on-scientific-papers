@@ -1,0 +1,526 @@
+/*test
+ */
+/*.topic_name_update{
+    margin-top: 6%;
+}*/
+
+/*Reset CSS*/
+/*
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Avenir, sans-serif;
+}
+*/
+
+/*
+.content {
+    margin: 0 auto;
+    width: 400px;
+}
+*/
+/*input,.date > label, .site > label, select{
+    width: 20%;
+    margin-top : 1%;
+    margin-left : auto;
+    margin-right : auto;
+    text-align: center;
+    display: block;
+
+}*/
+
+/*select {
+  text-align: center;
+  text-align-last: center;
+}*/
+
+a{
+    /*Avoid to underline reference*/
+    text-decoration: none;
+}
+
+body, html, .topicName{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: lightblue;
+}
+
+table, td, th {
+    border: 1px solid #aaa;
+    table-layout: fixed;
+}
+/*back home image*/
+.back_home{
+    height: 75px;
+    width: auto;
+}
+
+figcaption{
+    float: bottom;
+}
+
+td, th {
+    text-align: center;
+    padding: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border-spacing: 0;
+}
+
+ /*Scrolling bar*/
+::-webkit-scrollbar {
+	 width: 6px;
+}
+ ::-webkit-scrollbar-track {
+	 -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ ::-webkit-scrollbar-thumb {
+	 -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+
+/************************************************** topics template **************************************************/
+.topicName {
+    border: none;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.WordColumns td{
+    width: 50%;
+}
+
+.WordColumns tr:nth-child(odd){
+    background-color: #aad4e2;
+}
+
+.WordColumns tr:nth-child(even){
+    background-color: #a0cadb;
+}
+
+.topic {
+    border-collapse: collapse;
+}
+
+.topic td {
+  border: 1px solid black;
+}
+
+.topic tr:first-child td {
+  border-top-color: lightblue;
+}
+
+.topic tr:last-child td {
+  border-bottom-color: lightblue;
+}
+
+.topic tr td:first-child {
+    border-left-color: lightblue;
+    border-right-color: lightblue;
+}
+
+.topic tr td:last-child {
+  border-right-color: lightblue;
+}
+
+
+
+.topic th
+ {
+     background-color:  darkkhaki;
+ }
+/*********************************************************************************************************************/
+
+/************************************************** similarity-result template **************************************************/
+/* use with iframe object to display pdf*/
+.uploaded_pdf{
+    display: flex;
+    float: left;
+    width: 50%;
+    height: 100%;
+    allow: 'fullscreen';
+    scrolling : no;
+    frameborder: 0;
+    position: absolute;
+    border: none;
+}
+
+/* similar papers table */
+.similarity{
+    width:50%;
+    float : right;
+    color: cornsilk;
+}
+
+.similarity td, .similarity th{
+    padding-bottom: 50px;
+    border-style: hidden;
+}
+
+.similarity th
+{
+    background-color: #6d6a38;
+}
+/*********************************************************************************************************************/
+/************************************************** body-abstract template **************************************************/
+#plot_left
+{
+    width: 50%;
+    float: left;
+}
+
+#plot_right
+{
+    width: 50%;
+    margin-left: auto;
+}
+
+.center
+{
+    margin-left: 5%;
+    width : 90%;
+}
+/*********************************************************************************************************************/
+/************************************************** home template **************************************************/
+/* error message */
+#error {
+    text-align: center;
+    visibility: hidden;
+    width: 20%;
+    margin-left: 38%;
+    border: 1px solid;
+    padding: 15px 10px 15px 50px;
+    background-repeat: no-repeat;
+    background-position: 30% center;
+    color: #9F6000;
+    background-color: #FEEFB3;
+    background-image: url('https://i.imgur.com/Z8q7ww7.png');
+    border-radius: 10px;
+}
+
+.title , .text, h1{
+    color: cornsilk;
+    text-align: center;
+}
+
+.title{
+    font-size : 2em;
+    margin-top: -2%;
+    text-shadow: 2px 2px 1px #a58888;
+}
+
+.text{
+    font-size : 1em;
+}
+
+
+/* The menu */
+.under, .under2 {
+    display: none;
+    box-shadow: 0px 1px 2px #ac1b1b;
+    border-radius: 20px;
+    background-color: #20abb1;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav > ul li:hover .under, li.scroll2:hover .under2{
+    display: block;
+}
+
+.under li{
+    float: none;
+    width: 100%;
+    text-align: left;
+    text-shadow: 1px 1px 0px #a58888;
+}
+
+.under2 li{
+    text-indent: 30px;
+}
+.under a{
+    padding: 10px;
+    border-bottom: none;
+}
+.under a:hover{
+    border-bottom: none;
+}
+
+.scroll > a::after, .scroll2 > a::after{
+    content:" ▼";
+    font-size: 12px;
+}
+
+
+ .trigger {
+	 display: none;
+}
+ .hamburger {
+	 cursor: pointer;
+     margin-left: 10%;
+     margin-top: 2%;
+     z-index: 2;
+
+}
+ .hamburger span {
+	 height: 3px;
+	 width: 30px;
+	 background: cornsilk;
+	 display: block;
+	 margin-bottom: 5px;
+	 position: relative;
+	 transition: transform 0.3s ease-in-out, top 0.3s ease-in-out, opacity 0.3s ease-in-out;
+     z-index: 2;
+}
+ .trigger:checked ~ .hamburger span:first-child {
+	 transform: rotate(45deg);
+	 top: 8px;
+}
+ .trigger:checked ~ .hamburger span:last-child {
+	 transform: rotate(-45deg);
+	 top: -8px;
+}
+ .trigger:checked ~ .hamburger span:nth-child(2) {
+	 opacity: 0;
+}
+
+
+
+
+
+ nav {
+	 background: #14a4b6;
+	 width: 80%;
+     margin-left: 10%;
+	 padding: 20px 60px;
+	 margin-top: 10px;
+	 position: absolute;
+	 left: -100vw;
+	 box-sizing: border-box;
+	 transition: left 0.3s ease-in-out;
+     border-radius: 99px;
+}
+
+
+nav ul li{
+    float: left;
+    width: 20%;
+    text-align: center;
+    position: relative;
+
+}
+
+nav a{
+    display: block;
+    color: #f5f2eb;
+}
+
+nav a:hover{
+    color: lightblue;
+
+
+}
+ .trigger:checked ~ nav {
+	 left: 0;
+}
+ nav ul {
+	 list-style-type: none;
+	 margin: 0;
+	 padding: 0;
+}
+ /*nav ul li {
+	 margin-bottom: 10px;
+}*/
+ nav ul li a {
+	 text-decoration: none;
+	 color: cornsilk;
+
+}
+/*********************************************************************************************************************/
+/************************************************** database template **************************************************/
+
+.date{
+    display: inline;
+    color: cornsilk;
+}
+
+/*********************************************************************************************************************/
+/************************************************** database-form template **************************************************/
+/*select site*/
+.select select:hover{
+  color: #0f7280;
+    opacity: 90%;
+
+}
+.select select{
+  text-align-last:center;
+}
+
+  /*Form*/
+ .wrapper {
+     background: lightblue;
+	 /*background: #0f7280;*/
+	 background: -webkit-linear-gradient(top left, #156666 0%, #11c1c7 100%);
+	 background: -moz-linear-gradient(top left, #156666 0%, #11c1c7 100%);
+	 background: -o-linear-gradient(top left, #156666 0%, #11c1c7 100%);
+	 background: linear-gradient(to bottom right, #156666 0%, #11c1c7 100%);
+	 position: absolute;
+	 left: 0;
+	 width: 100%;
+     height: 100%;
+	 overflow: hidden;
+}
+
+ .container {
+	 width: 100%;
+	 margin: 0 auto;
+	 padding: 50px 0;
+	 text-align: center;
+}
+
+
+ form input, .select select {
+	 display: block;
+	 appearance: none;
+	 outline: 0;
+	 border-radius: 3px;
+	 padding: 10px 15px;
+	 margin: 0 auto 10px auto;
+	 text-align: center;
+	 font-size: 18px;
+	 color: cornsilk;
+	 transition-duration: 0.25s;
+	 font-weight: 300;
+     background-color: transparent;
+}
+
+  form input::placeholder{
+      color: cornsilk;
+  }
+
+ .field input:hover{
+     opacity: 50%;
+     width: 30%;
+}
+
+ form {
+	 appearance: none;
+	 outline: 0;
+	 border: 0;
+	 padding: 10px 15px;
+	 border-radius: 3px;
+	 cursor: pointer;
+	 font-size: 18px;
+	 transition-duration: 0.25s;
+}
+
+
+.checkDate {
+	 width: 20px;
+	 position: relative;
+	 margin: 20px auto;
+    color: cornsilk;
+}
+
+ .checkDate label {
+	 width: 20px;
+	 height: 20px;
+	 cursor: pointer;
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 border-radius: 4px;
+}
+ .checkDate label:after {
+	 content: '';
+	 width: 9px;
+	 height: 5px;
+	 position: absolute;
+	 top: 4px;
+	 left: 4px;
+	 border: 3px solid #fcfff4;
+	 border-top: none;
+	 border-right: none;
+	 background: transparent;
+	 opacity: 0.3;
+	 transform: rotate(-45deg);
+}
+
+.checkDate input[type=checkbox]:checked + label:after {
+	 opacity: 1;
+}
+
+ /*Search button*/
+
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: 1rem;
+    color:cornflowerblue;
+  font-weight: 70;
+    border-radius: 1em;
+}
+
+button.big-button {
+   padding: 1em 2em;
+   border: 2px solid cornflowerblue;
+  border-radius: 1em;
+  background: #1072d9;
+transform-style: preserve-3d;
+   transition: all 175ms cubic-bezier(0, 0, 1, 1);
+}
+button.big-button::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: steelblue;
+  border-radius: inherit;
+    box-shadow: 0 0 0 1px dodgerblue, 0 0.75em 0 0 cornflowerblue;
+ transform: translate3d(0, 0.75em, -1em);
+     transition: all 175ms cubic-bezier(0, 0, 1, 1);
+}
+
+
+button.big-button:hover {
+  background: royalblue;
+  transform: translate(0, 0.375em);
+}
+
+button.big-button:hover::before {
+  transform: translate3d(0, 0.75em, -1em);
+}
+
+button.big-button:active {
+            transform: translate(0em, 0.75em);
+}
+
+button.big-button:active::before {
+  transform: translate3d(0, 0, -1em);
+
+      box-shadow: 0 0 0 2px dodgerblue, 0 0.25em 0 0 dodgerblue;
+
+}
+ /*********************************************************************************************************************/
+
+
+

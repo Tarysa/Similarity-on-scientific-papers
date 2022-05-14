@@ -1,0 +1,542 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Preprocess &mdash; Sphinx_doc 2021 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Sphinx_doc
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Preprocess</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Sphinx_doc</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Preprocess</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/Preprocess.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-Preprocess">
+<span id="preprocess"></span><h1>Preprocess<a class="headerlink" href="#module-Preprocess" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="Preprocess.Preprocessing">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">Preprocess.</span></span><span class="sig-name descname"><span class="pre">Preprocessing</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">arg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Preprocess.Preprocessing" title="Permalink to this definition">¶</a></dt>
+<dd><p>Preprocessing step includind preprocessing, creation of corpus and dictionary.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Preprocess.Preprocessing.clean_poor_document">
+<span class="sig-name descname"><span class="pre">clean_poor_document</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">token_min</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Preprocess.Preprocessing.clean_poor_document" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot an histogram of remaining document length and remove all document who doesn’t have the minimal amount of tokens</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>token_min</strong> – minimal number of remaining token in a preprocessed document</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Preprocess.Preprocessing.copy">
+<span class="sig-name descname"><span class="pre">copy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">preprocessing_object</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Preprocess.Preprocessing.copy" title="Permalink to this definition">¶</a></dt>
+<dd><p>copy the object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>preprocessing_object</strong> – Preprocessing object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Preprocess.Preprocessing.create_BoW">
+<span class="sig-name descname"><span class="pre">create_BoW</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Preprocess.Preprocessing.create_BoW" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create the BoW corpus</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Preprocess.Preprocessing.create_TfIdf">
+<span class="sig-name descname"><span class="pre">create_TfIdf</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Preprocess.Preprocessing.create_TfIdf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create the Tf-Idf corpus</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Preprocess.Preprocessing.create_dictionary">
+<span class="sig-name descname"><span class="pre">create_dictionary</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Preprocess.Preprocessing.create_dictionary" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create the dictionary</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Preprocess.Preprocessing.get_BoW">
+<span class="sig-name descname"><span class="pre">get_BoW</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Preprocess.Preprocessing.get_BoW" title="Permalink to this definition">¶</a></dt>
+<dd><p>Getter for the BoW courpus</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>the BoW corpus</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Preprocess.Preprocessing.get_TfIdf">
+<span class="sig-name descname"><span class="pre">get_TfIdf</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Preprocess.Preprocessing.get_TfIdf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Getter for the tf-idf corpus</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>the tf-idf corpus</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Preprocess.Preprocessing.get_dictionary">
+<span class="sig-name descname"><span class="pre">get_dictionary</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Preprocess.Preprocessing.get_dictionary" title="Permalink to this definition">¶</a></dt>
+<dd><p>Getter for the dictionary</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>the dictionary</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Preprocess.Preprocessing.get_id_doc">
+<span class="sig-name descname"><span class="pre">get_id_doc</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Preprocess.Preprocessing.get_id_doc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Getter for the list of ID document from the dataset</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>ID document list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Preprocess.Preprocessing.get_name">
+<span class="sig-name descname"><span class="pre">get_name</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Preprocess.Preprocessing.get_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Getter for the name of the model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>the name of the model</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Preprocess.Preprocessing.get_original_text">
+<span class="sig-name descname"><span class="pre">get_original_text</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Preprocess.Preprocessing.get_original_text" title="Permalink to this definition">¶</a></dt>
+<dd><p>Getter for the original text</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>the original text</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Preprocess.Preprocessing.get_text_preprocessed">
+<span class="sig-name descname"><span class="pre">get_text_preprocessed</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Preprocess.Preprocessing.get_text_preprocessed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Getter for the preprocessed text</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>the text preprocessed</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Preprocess.Preprocessing.load">
+<span class="sig-name descname"><span class="pre">load</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Preprocess.Preprocessing.load" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load the object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>path</strong> – path of the object you want to load</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Preprocess.Preprocessing.remove_rare_word">
+<span class="sig-name descname"><span class="pre">remove_rare_word</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">threshold</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Preprocess.Preprocessing.remove_rare_word" title="Permalink to this definition">¶</a></dt>
+<dd><p>Removing all tokens who are not in the threshold st most common in the preprocessed text</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> – string to be cleaned</p></li>
+<li><p><strong>threshold</strong> – threshold used to take the most frequent word</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Preprocess.Preprocessing.save">
+<span class="sig-name descname"><span class="pre">save</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Preprocess.Preprocessing.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save the object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>path</strong> – path where you want to save the object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Preprocess.Preprocessing.set_BoW">
+<span class="sig-name descname"><span class="pre">set_BoW</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">BoW</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Preprocess.Preprocessing.set_BoW" title="Permalink to this definition">¶</a></dt>
+<dd><p>Setter for the BoW corpus</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>BoW</strong> – BoW corpus related to the preprocessed text</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Preprocess.Preprocessing.set_TfIdf">
+<span class="sig-name descname"><span class="pre">set_TfIdf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">TfIdf</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Preprocess.Preprocessing.set_TfIdf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Setter for the tf-Idf corpus</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>TfIdf</strong> – tf-Idf corpus related to the preprocessed text</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Preprocess.Preprocessing.set_dictionary">
+<span class="sig-name descname"><span class="pre">set_dictionary</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dictionary</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Preprocess.Preprocessing.set_dictionary" title="Permalink to this definition">¶</a></dt>
+<dd><p>Setter for the dictionary</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>dictionary</strong> – dictionary related to the preprocessed text</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Preprocess.Preprocessing.set_id_doc">
+<span class="sig-name descname"><span class="pre">set_id_doc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">IdDoc</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Preprocess.Preprocessing.set_id_doc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Setter for the ID document list</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>IdDoc</strong> – ID document list from the dataset</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Preprocess.Preprocessing.set_name">
+<span class="sig-name descname"><span class="pre">set_name</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Preprocess.Preprocessing.set_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Setter for the original text</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>name</strong> – original text</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Preprocess.Preprocessing.set_original_text">
+<span class="sig-name descname"><span class="pre">set_original_text</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Preprocess.Preprocessing.set_original_text" title="Permalink to this definition">¶</a></dt>
+<dd><p>Setter for the original text</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>text</strong> – original text</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Preprocess.Preprocessing.set_text_preprocessed">
+<span class="sig-name descname"><span class="pre">set_text_preprocessed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Preprocess.Preprocessing.set_text_preprocessed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Setter for the preprocessed text</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>text</strong> – preprocessed text</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Preprocess.Preprocessing1">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">Preprocess.</span></span><span class="sig-name descname"><span class="pre">Preprocessing1</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">arg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Preprocess.Preprocessing1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Preprocessing 1 based on Synset and Lemmatization</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Preprocess.Preprocessing1.execute">
+<span class="sig-name descname"><span class="pre">execute</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Preprocess.Preprocessing1.execute" title="Permalink to this definition">¶</a></dt>
+<dd><p>Doing the preprocessing 1 on the text.
+Tokenizes the document and a list of bigram is made for them.
+Then finds the first synset for each word/tag combination.
+If a synset is not found for that combination it is skipped.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Preprocess.Preprocessing2">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">Preprocess.</span></span><span class="sig-name descname"><span class="pre">Preprocessing2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">arg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Preprocess.Preprocessing2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Preprocessing 2 based on Synset</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Preprocess.Preprocessing2.execute">
+<span class="sig-name descname"><span class="pre">execute</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Preprocess.Preprocessing2.execute" title="Permalink to this definition">¶</a></dt>
+<dd><p>Doing the preprocessing 2 on the text.
+Tokenizes the document and a list of bigram is made for them.
+Then finds the first synset for each word/tag combination.
+If a synset is not found for that combination it is skipped.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Preprocess.Preprocessing3">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">Preprocess.</span></span><span class="sig-name descname"><span class="pre">Preprocessing3</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">arg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Preprocess.Preprocessing3" title="Permalink to this definition">¶</a></dt>
+<dd><p>Preprocessing 3 based on lemmatization</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Preprocess.Preprocessing3.execute">
+<span class="sig-name descname"><span class="pre">execute</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Preprocess.Preprocessing3.execute" title="Permalink to this definition">¶</a></dt>
+<dd><p>Doing the a classical lemmatization</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="Preprocess.convert_tag">
+<span class="sig-prename descclassname"><span class="pre">Preprocess.</span></span><span class="sig-name descname"><span class="pre">convert_tag</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tag</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Preprocess.convert_tag" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert the tag given by nltk.pos_tag to the tag used by wordnet.synsets</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>tag</strong> – tag from nltk.pos_tag</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the corresponding wordnet.synsets tag</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="Preprocess.get_wordnet_pos">
+<span class="sig-prename descclassname"><span class="pre">Preprocess.</span></span><span class="sig-name descname"><span class="pre">get_wordnet_pos</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">treebank_tag</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Preprocess.get_wordnet_pos" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert the tag given by nltk.pos_tag to the tag used by wordnetLematizer</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>treebank_tag</strong> – tag from nltk.pos_tag</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the corresponding wordnet.synsets tag</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="Preprocess.histogram">
+<span class="sig-prename descclassname"><span class="pre">Preprocess.</span></span><span class="sig-name descname"><span class="pre">histogram</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">liste</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">abscissa</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ordinate</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">8</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Preprocess.histogram" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot an histogram</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>liste</strong> – list of document length</p></li>
+<li><p><strong>num</strong> – number of point in abscissa</p></li>
+<li><p><strong>abscissa</strong> – abscissa name</p></li>
+<li><p><strong>ordinate</strong> – ordinate name</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="Preprocess.remove_non_ascii">
+<span class="sig-prename descclassname"><span class="pre">Preprocess.</span></span><span class="sig-name descname"><span class="pre">remove_non_ascii</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Preprocess.remove_non_ascii" title="Permalink to this definition">¶</a></dt>
+<dd><p>Removing all non ascii caracter from a text</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>text</strong> – string list</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the same text without non ascii caracter</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, POUILLOT Samuel / SENDRA Thomas.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

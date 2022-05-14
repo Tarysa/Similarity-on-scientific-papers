@@ -1,0 +1,121 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<!-- add the css for the loader -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/loader.css') }}">
+
+{% endblock %}
+
+{% block body %}
+
+
+<label for="trigger">
+
+    <!-- trigger the menu when clicked -->
+    <input type="checkbox" class="trigger" id="trigger"/>
+
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- the scrolling menu -->
+    <!-- inspired by an example from codepen: https://codepen.io/pierregiraud/pen/yGzqMg -->
+    <nav>
+        <ul>
+            <!-- scrolling item in the menu -->
+            <li class="scroll">
+                <a>View topics</a>
+                <ul class="under">
+                    <li><a href="/topics/Body/V">Bodies</a></li>
+                    <li class="scroll2">
+                        <a>Abstracts</a>
+                        <ul class="under2">
+                            <li><a href="/topics/Abstract/V1">V1</a></li>
+                            <li><a href="/topics/Abstract/V2">V2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="/body-abstract/">Document topic visualisation</a></li>
+            <li class="scroll">
+                <a>Word-topic distribution</a>
+                <ul class="under">
+                    <li><a href="#">Abstracts</a></li>
+                    <li><a href="#">Bodies</a></li>
+                </ul>
+            </li>
+            <li><a href="/database-research/">Explore Dataset</a></li>
+            <li><a href="/documentation/">Documentation</a></li>
+        </ul>
+    </nav>
+
+</label>
+<div class="title">
+    <a>Darmstadt University x Polytech</a>
+</div>
+
+<br/>&nbsp;<br/>
+<br/>&nbsp;<br/>
+
+<div class="text">
+    <a>Please upload a pdf to see similar paper</a>
+</div>
+<br/>&nbsp;<br/>
+
+<!-- display the form to upload a file -->
+<form action="/uploader/" method="POST"
+      enctype="multipart/form-data">
+    <input type="file" name="file" id="file"/>
+    <input onclick="fun()" type="submit">
+
+</form>
+
+
+
+<!-- the loader is not displayed by default -->
+<!-- inspired by an example from codepen: https://codepen.io/mr_alien/pen/FDLjg -->
+<div id="loader" style="display: none;">
+    <div class="body">
+    <span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </span>
+        <div class="base">
+            <span></span>
+            <div class="face"></div>
+        </div>
+    </div>
+    <div class="longfazers">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <h1>Loading</h1>
+</div>
+
+<!-- the error message is send throw jinja, if no error message is send the div block is not displayed -->
+<div id="error">
+    {{error}}
+</div>
+
+<script>
+    /* show the loader when user click on the form */
+    function fun() {
+        document.getElementById("loader").style.display = "block";
+    }
+    /* show error message if it exist */
+    window.onload = function showError() {
+        if ('{{error}}') {
+            document.getElementById("error").style.visibility = "visible";
+        }
+
+    }
+</script>
+
+{% endblock %}

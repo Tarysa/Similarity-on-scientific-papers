@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+
+{% block head %}
+{% endblock %}
+
+{% block body %}
+
+<a href="/"><img class="back_home" src="/static/images/home3.png"> </a>
+
+<table>
+    <tr>
+        <!-- header of the table -->
+        {% for column in columns %}
+            <th>{{ column }}</th>
+        {% endfor %}
+    </tr>
+    <!-- rows -->
+    {% for topic in topics %}
+    <tr class="topic">
+        {% set dico = loads(topic['Words']) %}
+
+        {% for column in columns %}
+
+        {% if column == 'Words' %}
+            <!-- the table for the top word of a topic -->
+            <td>
+                <table class="WordColumns">
+                    {% for key in dico %}
+                        <tr>
+                            <td>{{ key }}</td>
+                            <td>{{ dico[key] }}</td>
+                        </tr>
+                    {% endfor %}
+                    {{ Test }}
+                </table>
+            </td>
+
+        {% elif column == 'Id' %}
+            <td> {{ topic[column] }}</td>
+        {% elif column == 'Name' %}
+            {% if topic['Name'] == '' %}
+                <!-- if topic name is void we display a message -->
+                {% set display = "Please entre topic name" %}
+            {% else %}
+                <!-- else we display the topic name -->
+                {% set display = topic['Name'] %}
+            {% endif %}
+            <!-- if the user click to update the form, what is written will be saved as the topic name -->
+            <td maxlength=30>
+                <form action={{ action }} method="POST">
+                    <input name="topicName" class="topicName" value="{{display}}">
+                    <input type="hidden" name="topicId" class="topicId" value={{topic['Id']}}>
+                    <br>
+                    <button class="button" type="submit"> update</button>
+                </form>
+            </td>
+        {% endif %}
+        {% endfor %}
+    </tr>
+    {% endfor %}
+
+</table>
+
+
+{% endblock %}

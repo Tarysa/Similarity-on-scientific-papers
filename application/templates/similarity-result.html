@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+{% block body %}
+
+<!-- include a pdf -->
+<iframe class="uploaded_pdf" src={{filename}} ></iframe>
+
+<!-- display the most similar papers -->
+<table class="similarity">
+    <tr>
+        <th>Title</th>
+        <th>Link</th>
+        <th>Author</th>
+        <th>Similarity</th>
+    </tr>
+    {% for paper in similar %}
+        <tr>
+            {% for attribut in paper %}
+            <td>{{attribut}}</td>
+            {% endfor %}
+        </tr>
+    {% endfor %}
+
+</table>
+
+{% endblock %}
+
+

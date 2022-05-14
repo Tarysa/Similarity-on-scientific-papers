@@ -1,0 +1,335 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>App &mdash; Sphinx_doc 2021 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Tables" href="indexTables.html" />
+    <link rel="prev" title="Application" href="indexApp.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Sphinx_doc
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="indexModule.html">Model</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="indexApp.html">Application</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">App</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="indexTables.html">Tables</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Sphinx_doc</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="indexApp.html">Application</a> &raquo;</li>
+        
+      <li>App</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/app.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-app">
+<span id="app"></span><h1>App<a class="headerlink" href="#module-app" title="Permalink to this headline">¶</a></h1>
+<p>App made with Flask and flask-sqlalchemy</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="app.dataResearch">
+<span class="sig-prename descclassname"><span class="pre">app.</span></span><span class="sig-name descname"><span class="pre">dataResearch</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.dataResearch" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function show the form to make a request on the database <em>paper</em>.</p>
+<p>All field of the form are optional, if the user doesn’t select any value they will be take the ‘default’ value.</p>
+<p>When the user click on the <em>research</em> button, the function will redirect to the <em>showPaper</em> function.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>The html research form or redirect to <em>showPaper</em></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="app.documentation">
+<span class="sig-prename descclassname"><span class="pre">app.</span></span><span class="sig-name descname"><span class="pre">documentation</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.documentation" title="Permalink to this definition">¶</a></dt>
+<dd><p>It should redirect to the documentation  for the whole project.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>html</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="app.process_similarity">
+<span class="sig-prename descclassname"><span class="pre">app.</span></span><span class="sig-name descname"><span class="pre">process_similarity</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.process_similarity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Display a pdf paper found in the uploaded_file folder.</p>
+<p>Extract the body and abstract from this paper and calculate the topic distribution.</p>
+<p>Find similar paper in the database based on the topic distribution and display them as suggestion.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>html</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="app.showBodyAbstractDistribution">
+<span class="sig-prename descclassname"><span class="pre">app.</span></span><span class="sig-name descname"><span class="pre">showBodyAbstractDistribution</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.showBodyAbstractDistribution" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show a plot of papers abstracts and bodies in the topic space, projected in 2 dimensions.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>html</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="app.showPaper">
+<span class="sig-prename descclassname"><span class="pre">app.</span></span><span class="sig-name descname"><span class="pre">showPaper</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">author</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">journal</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dateMin</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dateMax</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">site</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">checkDate</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.showPaper" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function make a request to the database <em>paper</em> and display the answer in a table.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>id</strong> (<em>str</em>) – id of a paper in the database</p></li>
+<li><p><strong>title</strong> (<em>str</em>) – </p></li>
+<li><p><strong>author</strong> (<em>str</em>) – </p></li>
+<li><p><strong>journal</strong> (<em>str</em>) – </p></li>
+<li><p><strong>dateMin</strong> (<em>str</em>) – by default 01/01/0001</p></li>
+<li><p><strong>dateMax</strong> (<em>str</em>) – by default the date of the day</p></li>
+<li><p><strong>site</strong> (<em>str</em>) – specify if the paper come from arXiv or CiteSeerX, both by default</p></li>
+<li><p><strong>checkDate</strong> (<em>str</em>) – specify if paper should be filtered by <strong>dateMin</strong> and <strong>dateMax</strong></p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>html</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="app.showSimilarity">
+<span class="sig-prename descclassname"><span class="pre">app.</span></span><span class="sig-name descname"><span class="pre">showSimilarity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">error</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.showSimilarity" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function is called at the root of the url.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>error</strong> (<em>str</em>) – The error message to display on the page, optional.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>html</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="app.showTopic">
+<span class="sig-prename descclassname"><span class="pre">app.</span></span><span class="sig-name descname"><span class="pre">showTopic</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">version</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.showTopic" title="Permalink to this definition">¶</a></dt>
+<dd><p>If method is GET, show the word topic distribution. Topic word are stored in the databases WordTopicBody, WordTopicAbstractV1 and WordTopicAbstractV2.</p>
+<p>If method is POST, store ‘topicName’ and ‘topicId’ in the appropriate table</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>type</strong> – Body or Abstract</p></li>
+<li><p><strong>version</strong> – V, V1 or V2</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>html</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="app.upload_file">
+<span class="sig-prename descclassname"><span class="pre">app.</span></span><span class="sig-name descname"><span class="pre">upload_file</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.upload_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function is called when the user click on the <strong>submit</strong> button on the homepage.
+It should check that their is a file and that it is a pdf.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>redirect on the homepage with a warning message if no file are selected, else redirect to <em>process_similarity</em></p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="indexTables.html" class="btn btn-neutral float-right" title="Tables" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="indexApp.html" class="btn btn-neutral float-left" title="Application" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, POUILLOT Samuel / SENDRA Thomas.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

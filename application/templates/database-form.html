@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block head %}
+{% endblock %}
+
+{% block body %}
+
+<!-- display the form to query the database paper -->
+
+<div class="wrapper">
+    <a href="/"><img class="back_home" src="/static/images/home3.png"> </a>
+    <div class="container">
+        <form action="/database-research/" method="POST">
+
+            <div class="select">
+                <select id="site-select" name="site">
+                    <option selected disabled>Choose archive site</option>
+                    <option value="all">all</option>
+                    <option value="Arxiv">Arxiv</option>
+                    <option value="CiteSeerX">CiteSeerX</option>
+                </select>
+                <div class="select__arrow"></div>
+            </div>
+
+            <div class="field">
+                <input id="Id" name="Id" placeholder="Id" type="text">
+
+
+                <input id="Title" name="Title" placeholder="Title" type="text">
+
+
+                <input id="Author" name="Author" placeholder="Author" type="text">
+
+
+                <input id="Journal" name="Journal" placeholder="Journal" type="text">
+
+            </div>
+            <div class="date">
+                <label for="checkDate">Filter by date ?</label>
+                <div class="checkDate">
+                    <input id="checkDate" name="checkDate" type="checkbox">
+                    <label for="checkDate"></label>
+                </div>
+
+                <label> from </label>
+
+                <input id="date_min" name="date_min" type="date" value="0001-01-01">
+
+                <label> to </label>
+
+                <input id="date_max" name="date_max" type="date" value={{today}}>
+
+            </div>
+            <button class="big-button" >Search</button>
+        </form>
+    </div>
+</div>
+
+
+{% endblock %}

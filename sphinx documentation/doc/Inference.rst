@@ -1,0 +1,5 @@
+Inference
+=========
+
+.. automodule:: Inference
+    :members:
